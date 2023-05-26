@@ -82,12 +82,12 @@ class CalculatorApp extends StatelessWidget {
                               'Result:',
                               style: TextStyle(fontSize: 20.0),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 6,
                             ),
                             Text(
                               ' ${calculatorController.result.value}',
-                              style: TextStyle(
+                              style: const TextStyle(
                                   fontSize: 20.0, color: Colors.green),
                             ),
                           ],
@@ -116,7 +116,7 @@ class CalculatorApp extends StatelessWidget {
                                   width: MediaQuery.of(context).size.width,
                                   child: ElevatedButton(
                                     onPressed: calculatorController.add,
-                                    child: Text('Add'),
+                                    child: const Text('Add'),
                                   ),
                                 ),
                               ),
@@ -128,7 +128,7 @@ class CalculatorApp extends StatelessWidget {
                                   width: MediaQuery.of(context).size.width,
                                   child: ElevatedButton(
                                     onPressed: calculatorController.subtract,
-                                    child: Text('Subtract'),
+                                    child: const Text('Subtract'),
                                   ),
                                 ),
                               ),
@@ -146,7 +146,7 @@ class CalculatorApp extends StatelessWidget {
                                   width: MediaQuery.of(context).size.width,
                                   child: ElevatedButton(
                                     onPressed: calculatorController.multiply,
-                                    child: Text('Multiply'),
+                                    child: const Text('Multiply'),
                                   ),
                                 ),
                               ),
@@ -158,7 +158,7 @@ class CalculatorApp extends StatelessWidget {
                                   width: MediaQuery.of(context).size.width,
                                   child: ElevatedButton(
                                     onPressed: calculatorController.divide,
-                                    child: Text('Divide'),
+                                    child: const Text('Divide'),
                                   ),
                                 ),
                               ),
@@ -178,7 +178,7 @@ class CalculatorApp extends StatelessWidget {
                       onPressed: () {
                         calculatorController.clear();
                       },
-                      child: Text("Clear")),
+                      child: const Text("Clear")),
                 ),
               ),
             ],
